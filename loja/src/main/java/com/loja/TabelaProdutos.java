@@ -88,7 +88,11 @@ public class TabelaProdutos {
             produtoProcurado.getDescricao();
             produtoProcurado.getValorUnitario();
         }
-    }
 
+    }
+    public void removerProduto(int produtoId) {
+        Produto produtoRemover = this.buscarProdutoPeloId(produtoId);
+        this.produtos.remove(produtoRemover);
+    }
 }
 
